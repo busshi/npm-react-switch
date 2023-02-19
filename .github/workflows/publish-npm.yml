@@ -10,7 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
-        run: npm ci
+        run: yarn
+      - name: Build Package
+        run: yarn build
       - name: Publish Package
         run: npm publish --access public
         env:
