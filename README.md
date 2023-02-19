@@ -1,4 +1,4 @@
-![publish](https://github.com/busshi/npm-react-switch/actions/workflows/publish.yml/badge.svg)
+![publish](https://github.com/busshi/npm-react-switch/actions/workflows/publish-npm.yml/badge.svg)
 
 # React-Switch
 
