@@ -1,3 +1,5 @@
+![publish](https://github.com/busshi/npm-react-switch/actions/workflows/publish.yml/badge.svg)
+
 # React-Switch
 
 A custom React switch component reusable without dependency.
