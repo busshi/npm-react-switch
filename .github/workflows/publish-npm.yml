@@ -17,5 +17,7 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Clear npm cache
+        run: npm cache clean --force
       - name: Publish Package
         run: npm publish --access public
