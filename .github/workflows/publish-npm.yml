@@ -27,6 +27,9 @@ jobs:
           cache: "npm"
           cache-version: ${{ matrix.npm-version }}
 
+      - name: Print NPM log
+        run: cat /home/runner/.npm/_logs/2023-02-19T14_24_47_195Z-debug-0.log
+
       - name: Install Dependencies
         run: npm install
 
