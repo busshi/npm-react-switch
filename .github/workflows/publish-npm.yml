@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
-        npm-version: [7.x]
+        node-version: [16.14.2]
+        npm-version: [8.5.0]
 
     steps:
       - name: Checkout
