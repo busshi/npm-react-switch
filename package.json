@@ -1,6 +1,6 @@
 {
   "name": "@busshi/react-switch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A custom iOS switch component for React",
   "private": false,
   "main": "src/index.tsx",

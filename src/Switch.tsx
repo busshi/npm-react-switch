@@ -67,9 +67,6 @@ const Switch: React.FC<SwitchProps> = ({
         onChange={toggleSwitch}
         className="checkbox-input"
       />
-      <div className="checkbox-label" style={switchStyle}>
-        <div className="checkbox-checked-label"></div>
-      </div>
       {checked ? (
         <label
           htmlFor="iosCheckbox"
