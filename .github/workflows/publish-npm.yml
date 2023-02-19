@@ -1,21 +1,21 @@
 name: NPM Publish
-  on:
-    push:
-      branches:
-        - main
-  
-  jobs:
-    publish:
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [16.x]
         npm-version: [7.x]
-  
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-  
+
       - name: Use Node.js version ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
@@ -26,10 +26,10 @@ name: NPM Publish
           token: ${{ secrets.NPM_TOKEN }}
           cache: "npm"
           cache-version: ${{ matrix.npm-version }}
-  
+
       - name: Install Dependencies
         run: npm install
-  
+
       - name: Build
         run: npm run build
 
