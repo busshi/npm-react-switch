@@ -31,7 +31,6 @@ Colors can be passed as prop as hex (#FFF), rgb (rgb(255, 255, 255)) or as noun 
 ```js
 import Switch from "@busshi/react-switch";
 import { useState } from "react";
-import "./App.css";
 
 function App() {
   const [isChecked, setIsChecked] = useState(false);
