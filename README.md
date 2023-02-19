@@ -2,7 +2,7 @@
 
 # React-Switch
 
-A custom React switch component reusable without dependency.
+A custom React switch component reusable without extra dependency (only React dependencies).
 
 ## Installation
 
