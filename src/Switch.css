@@ -8,12 +8,12 @@
 .checkbox-input {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
   width: 100%;
   height: 100%;
 }
 
 .checkbox-label {
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
