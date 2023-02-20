@@ -67,19 +67,11 @@ const Switch: React.FC<SwitchProps> = ({
         onChange={toggleSwitch}
         className="checkbox-input"
       />
-      {checked ? (
-        <label
-          htmlFor="iosCheckbox"
-          className="checkbox-checked-label checkbox-label"
-          style={switchStyle}
-        ></label>
-      ) : (
-        <label
-          htmlFor="iosCheckbox"
-          className="checkbox-label"
-          style={switchStyle}
-        ></label>
-      )}
+      <label
+        htmlFor="iosCheckbox"
+        className={`checkbox-label ${checked && "checkbox-checked-label"}`}
+        style={switchStyle}
+      ></label>
     </div>
   );
 };
